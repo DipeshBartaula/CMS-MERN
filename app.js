@@ -2,7 +2,13 @@ const express = require("express");
 const { connectDatabase } = require("./database/database");
 const Blog = require("./model/blogModel");
 const app = express();
+const cors = require("cors");
 
+app.use(
+  cors({
+    origin: "http://localhost:5173",
+  })
+);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -24,7 +30,7 @@ app.get("/blogs", async (req, res) => {
     return res.json({
       status: 200,
       message: "Blogs fetched successfully",
-      data: blogs,
+      blogs: blogs,
     });
   }
 });
