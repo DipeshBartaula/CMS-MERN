@@ -1,42 +1,45 @@
 /* Reset some default styles */
-body, h2, h3, p {
-    margin: 0;
-    padding: 0;
+body,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
 }
 
 .card-container {
-    display: flex;
-    justify-content: space-around; /* Adjust as needed */
-    flex-wrap: wrap;
+  display: flex;
+  /* justify-content: space-around; Adjust as needed */
+  flex-wrap: wrap;
 }
 
 /* Style the card */
 .card {
-    max-width: 300px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 50px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Style the card title */
 .card-title {
-    color: #333;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 /* Style the card subtitle */
 .card-subtitle {
-    color: #666;
-    font-size: 1.2rem;
-    margin-bottom: 8px;
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
 }
 
 /* Style the card description */
 .card-description {
-    color: #444;
-    font-size: 1rem;
-    line-height: 1.4;
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.4;
 }

@@ -1,14 +1,23 @@
+import { useNavigate } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div>
         <div className="navbar">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
+          <a onClick={() => navigate("/")} style={{ cursor: "pointer" }}>
+            Home
+          </a>
+          <a
+            onClick={() => navigate("/createBlog")}
+            style={{ cursor: "pointer" }}
+          >
+            CreateBlog
+          </a>
+          <a href="#services">SingleBlog</a>
+          <a href="#contact">Edit</a>
         </div>
       </div>
     </>
