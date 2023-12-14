@@ -47,7 +47,7 @@ app.get("/blogs/:id", async (req, res) => {
   } else {
     return res.status(200).json({
       message: "Blog fetched successfully",
-      data: blog,
+      blog: blog,
     });
   }
   //Alternative
